@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #360185, #01091f);
+    color: #e0e7ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.links, .guest, .lang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+}
+
+.links a,
+.guest a,
+.lang a,
+.logout {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #e0e7ff;
+    transition: all 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.links a:hover,
+.guest a:hover,
+.lang a:hover,
+.logout:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+    color: #ffffff;
+}
+
+.nav-link-active {
+    color: #facc15;
+    font-weight: 600;
+}
+
+nav span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f3f4f6;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #6a0868;
+    box-shadow: 0 4px 8px rgba(208, 155, 231, 0.05);
+    font-family: Arial, sans-serif;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8e0e9a;
+}
+
+.form-container input[type="text"],
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-container textarea {
+    min-height: 120px;
+    background-color: #8e0e9a;
+    resize: vertical;
+}
+
+.error {
+    color: #f44336;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.form-container .btn-add-post {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container .btn-add-post:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+}

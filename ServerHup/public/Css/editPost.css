@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #360185, #01091f);
+    color: #e0e7ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.links, .guest, .lang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+}
+
+.links a,
+.guest a,
+.lang a,
+.logout {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #e0e7ff;
+    transition: all 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.links a:hover,
+.guest a:hover,
+.lang a:hover,
+.logout:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+    color: #ffffff;
+}
+
+.nav-link-active {
+    color: #facc15;
+    font-weight: 600;
+}
+
+nav span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f3f4f6;
+}
+
+.server-details-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.server-details-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.server-details-container p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.btn-add-post {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.btn-add-comment {
+    background-color: #FF9800;
+    color: white;
+    border: none;
+}
+
+.filter-category {
+    margin: 15px 0;
+}
+
+.filter-category select {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.post-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post-card h4 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.post-card p {
+    font-size: 1rem;
+    color: #59088f;
+    margin-bottom: 5px;
+}
+
+.admin-badge {
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.comments-section {
+    margin-top: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #ccc;
+}
+
+.comments-section h5 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.add-comment-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.add-comment-form input[type="text"] {
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.add-comment-form button {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
